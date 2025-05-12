@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autonomous Vehicle Applications</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        color: #3498db;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 5px;
+        margin-top: 30px;
+      }
+
+      .industry-section {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 30px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 0.9em;
+      }
+
+      th {
+        background-color: #3498db;
+        color: white;
+        text-align: left;
+        padding: 12px 15px;
+      }
+
+      td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #ddd;
+        vertical-align: top;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #e8f4fc;
+      }
+
+      .app-name {
+        font-weight: bold;
+        color: #2c3e50;
+      }
+
+      .sensor-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+      }
+
+      .sensor-list li {
+        margin-bottom: 5px;
+        padding-left: 15px;
+        position: relative;
+      }
+
+      .sensor-list li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #3498db;
+      }
+
+      .advantages-list,
+      .challenges-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+      }
+
+      .advantages-list li {
+        margin-bottom: 5px;
+        padding-left: 15px;
+        position: relative;
+      }
+
+      .advantages-list li:before {
+        content: "+";
+        position: absolute;
+        left: 0;
+        color: #27ae60;
+      }
+
+      .challenges-list li {
+        margin-bottom: 5px;
+        padding-left: 15px;
+        position: relative;
+      }
+
+      .challenges-list li:before {
+        content: "⚠";
+        position: absolute;
+        left: 0;
+        color: #e74c3c;
+      }
+
+      .complexity {
+        font-weight: bold;
+      }
+
+      .high-complexity {
+        color: #e74c3c;
+      }
+
+      .medium-complexity {
+        color: #f39c12;
+      }
+
+      .low-complexity {
+        color: #27ae60;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Autonomous Vehicle Applications by Industry</h1>
+
+    <div class="industry-section">
+      <h2>🚚 Transportation & Logistics</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Application</th>
+            <th>Description</th>
+            <th>Sensor Roles</th>
+            <th>Advantages</th>
+            <th>Challenges</th>
+            <th>Vehicle Complexity</th>
+            <th>Additional Remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="app-name">Autonomous Freight Delivery</td>
+            <td>Long-haul trucks operating autonomously on highways.</td>
+            <td>
+              <ul class="sensor-list">
+                <li>
+                  <strong>LiDAR</strong>: 3D mapping and obstacle detection
+                </li>
+                <li><strong>Radar</strong>: Speed and distance measurement</li>
+                <li>
+                  <strong>Cameras</strong>: Lane detection and traffic sign
+                  recognition
+                </li>
+                <li><strong>IMU</strong>: Vehicle stability and orientation</li>
+                <li>
+                  <strong>Ultrasonic Sensors</strong>: Close-range object
+                  detection
+                </li>
+                <li><strong>4G Router</strong>: Real-time data transmission</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="advantages-list">
+                <li>Reduced driver fatigue</li>
+                <li>Continuous operation</li>
+                <li>Lower operational costs</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="challenges-list">
+                <li>Regulatory hurdles</li>
+                <li>Public acceptance</li>
+                <li>Safety in mixed traffic</li>
+              </ul>
+            </td>
+            <td class="complexity high-complexity">
+              High (Level 4-5 autonomy)
+            </td>
+            <td>
+              Companies like Aurora and Kodiak Robotics are advancing in this
+              space.
+            </td>
+          </tr>
+          <tr>
+            <td class="app-name">Last-Mile Delivery Robots</td>
+            <td>Small autonomous vehicles delivering goods in urban areas.</td>
+            <td>
+              <ul class="sensor-list">
+                <li>
+                  <strong>LiDAR</strong>: Navigation and obstacle avoidance
+                </li>
+                <li>
+                  <strong>Cameras</strong>: Object recognition and path planning
+                </li>
+                <li><strong>Ultrasonic Sensors</strong>: Proximity sensing</li>
+                <li><strong>IMU</strong>: Motion tracking</li>
+                <li><strong>4G Router</strong>: Remote monitoring</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="advantages-list">
+                <li>Efficient last-mile delivery</li>
+                <li>Reduced traffic congestion</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="challenges-list">
+                <li>Navigating sidewalks</li>
+                <li>Vandalism/theft</li>
+                <li>Weather conditions</li>
+              </ul>
+            </td>
+            <td class="complexity medium-complexity">
+              Medium (Level 3-4 autonomy)
+            </td>
+            <td>Nuro and Starship Technologies are notable players.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="industry-section">
+      <h2>🌾 Agriculture</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Application</th>
+            <th>Description</th>
+            <th>Sensor Roles</th>
+            <th>Advantages</th>
+            <th>Challenges</th>
+            <th>Vehicle Complexity</th>
+            <th>Additional Remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="app-name">Autonomous Tractors</td>
+            <td>Self-driving tractors for plowing, seeding, and harvesting.</td>
+            <td>
+              <ul class="sensor-list">
+                <li><strong>LiDAR</strong>: Terrain mapping</li>
+                <li><strong>Cameras</strong>: Crop monitoring</li>
+                <li><strong>IMU</strong>: Vehicle orientation</li>
+                <li><strong>Ultrasonic Sensors</strong>: Obstacle detection</li>
+                <li><strong>4G Router</strong>: Data transmission</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="advantages-list">
+                <li>Precision agriculture</li>
+                <li>Labor cost reduction</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="challenges-list">
+                <li>Terrain variability</li>
+                <li>High initial investment</li>
+              </ul>
+            </td>
+            <td class="complexity medium-complexity">
+              Medium (Level 3-4 autonomy)
+            </td>
+            <td>Companies like John Deere and Monarch Tractor are pioneers.</td>
+          </tr>
+          <tr>
+            <td class="app-name">Agricultural Drones</td>
+            <td>Drones for crop monitoring, spraying, and mapping.</td>
+            <td>
+              <ul class="sensor-list">
+                <li><strong>LiDAR</strong>: Topography mapping</li>
+                <li><strong>Cameras</strong>: Visual inspection</li>
+                <li><strong>IMU</strong>: Flight stability</li>
+                <li><strong>4G Router</strong>: Real-time data sharing</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="advantages-list">
+                <li>Efficient crop management</li>
+                <li>Data-driven insights</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="challenges-list">
+                <li>Airspace regulations</li>
+                <li>Limited flight time</li>
+              </ul>
+            </td>
+            <td class="complexity low-complexity">Low (Level 2 autonomy)</td>
+            <td>Enhances precision farming techniques.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="industry-section">
+      <h2>🏗️ Construction</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Application</th>
+            <th>Description</th>
+            <th>Sensor Roles</th>
+            <th>Advantages</th>
+            <th>Challenges</th>
+            <th>Vehicle Complexity</th>
+            <th>Additional Remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="app-name">Self-Driving Construction Equipment</td>
+            <td>
+              Autonomous excavators and bulldozers for construction tasks.
+            </td>
+            <td>
+              <ul class="sensor-list">
+                <li><strong>LiDAR</strong>: Site mapping</li>
+                <li><strong>Cameras</strong>: Object recognition</li>
+                <li><strong>IMU</strong>: Equipment stability</li>
+                <li>
+                  <strong>Ultrasonic Sensors</strong>: Proximity detection
+                </li>
+                <li><strong>4G Router</strong>: Remote operation</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="advantages-list">
+                <li>Increased productivity</li>
+                <li>Reduced labor costs</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="challenges-list">
+                <li>Dynamic environments</li>
+                <li>Safety concerns</li>
+              </ul>
+            </td>
+            <td class="complexity high-complexity">High (Level 4 autonomy)</td>
+            <td>Built Robotics is a key player in this domain.</td>
+          </tr>
+          <tr>
+            <td class="app-name">Autonomous Surveying Drones</td>
+            <td>Drones for site mapping and monitoring.</td>
+            <td>
+              <ul class="sensor-list">
+                <li><strong>LiDAR</strong>: 3D mapping</li>
+                <li><strong>Cameras</strong>: Visual inspection</li>
+                <li><strong>IMU</strong>: Flight control</li>
+                <li><strong>4G Router</strong>: Data transmission</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="advantages-list">
+                <li>Accurate data collection</li>
+                <li>Time-saving</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="challenges-list">
+                <li>Weather dependency</li>
+                <li>Regulatory compliance</li>
+              </ul>
+            </td>
+            <td class="complexity low-complexity">Low (Level 2 autonomy)</td>
+            <td>Enhances planning and monitoring efficiency.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="industry-section">
+      <h2>🛡️ Public Safety & Defense</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Application</th>
+            <th>Description</th>
+            <th>Sensor Roles</th>
+            <th>Advantages</th>
+            <th>Challenges</th>
+            <th>Vehicle Complexity</th>
+            <th>Additional Remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="app-name">Unmanned Ground Vehicles (UGVs)</td>
+            <td>Robots for surveillance, reconnaissance, and bomb disposal.</td>
+            <td>
+              <ul class="sensor-list">
+                <li><strong>LiDAR</strong>: Terrain mapping</li>
+                <li><strong>Cameras</strong>: Visual surveillance</li>
+                <li><strong>Radar</strong>: Obstacle detection</li>
+                <li><strong>IMU</strong>: Navigation</li>
+                <li>
+                  <strong>Ultrasonic Sensors</strong>: Close-range detection
+                </li>
+                <li><strong>4G Router</strong>: Remote control</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="advantages-list">
+                <li>Reduced risk to personnel</li>
+                <li>Remote operation</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="challenges-list">
+                <li>Terrain challenges</li>
+                <li>Communication issues</li>
+              </ul>
+            </td>
+            <td class="complexity high-complexity">High (Level 4 autonomy)</td>
+            <td>Used extensively in military operations.</td>
+          </tr>
+          <tr>
+            <td class="app-name">Autonomous Patrol Vehicles</td>
+            <td>Driverless vehicles for border and area surveillance.</td>
+            <td>
+              <ul class="sensor-list">
+                <li><strong>LiDAR</strong>: Area mapping</li>
+                <li><strong>Cameras</strong>: Visual monitoring</li>
+                <li><strong>Radar</strong>: Movement detection</li>
+                <li><strong>IMU</strong>: Vehicle stability</li>
+                <li><strong>Ultrasonic Sensors</strong>: Proximity sensing</li>
+                <li><strong>4G Router</strong>: Data transmission</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="advantages-list">
+                <li>24/7 surveillance capability</li>
+                <li>Reduced human risk</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="challenges-list">
+                <li>Complex terrain navigation</li>
+                <li>Cybersecurity threats</li>
+              </ul>
+            </td>
+            <td class="complexity high-complexity">High (Level 4 autonomy)</td>
+            <td>
+              Emerging technology in border security and critical infrastructure
+              monitoring.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
