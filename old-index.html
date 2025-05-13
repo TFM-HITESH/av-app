@@ -132,25 +132,6 @@
             font-weight: bold;
         }
         
-        .ai-model-list {
-            list-style-type: none;
-            padding-left: 0;
-            margin: 0;
-        }
-        
-        .ai-model-list li {
-            margin-bottom: 6px;
-            padding-left: 18px;
-            position: relative;
-            font-size: 0.85em;
-        }
-        
-        .ai-model-list li:before {
-            content: "🤖";
-            position: absolute;
-            left: 0px;
-        }
-        
         .advantages-list, .challenges-list {
             list-style-type: none;
             padding-left: 0;
@@ -258,7 +239,7 @@
     <div class="meta-info">
         <div class="meta-item"><strong>Last Updated:</strong> July 2023</div>
         <div class="meta-item"><strong>Data Sources:</strong> Government reports, corporate announcements, peer-reviewed studies</div>
-        <div class="meta-item"><strong>Validation:</strong> All use cases verified</div>
+        <div class="meta-item"><strong>Validation:</strong> All use cases verified with at least one public implementation</div>
     </div>
     
     <div class="key-stat">
@@ -272,14 +253,13 @@
         <table>
             <thead>
                 <tr>
-                    <th style="width: 12%">Application</th>
-                    <th style="width: 12%">Description</th>
-                    <th style="width: 15%">Sensor Roles</th>
-                    <th style="width: 15%">AI Models/Architectures Used</th>
-                    <th style="width: 12%">Advantages</th>
-                    <th style="width: 12%">Challenges</th>
+                    <th style="width: 15%">Application</th>
+                    <th style="width: 15%">Description</th>
+                    <th style="width: 20%">Sensor Roles</th>
+                    <th style="width: 15%">Advantages</th>
+                    <th style="width: 15%">Challenges</th>
                     <th style="width: 10%">Complexity</th>
-                    <th style="width: 12%">Status</th>
+                    <th style="width: 10%">Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -292,14 +272,6 @@
                             <li><strong>Radar</strong>: Speed and distance measurement</li>
                             <li><strong>Cameras</strong>: Lane detection and traffic sign recognition</li>
                             <li><strong>IMU</strong>: Vehicle stability and orientation</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul class="ai-model-list">
-                            <li><strong>YOLOv5</strong>: Real-time object detection</li>
-                            <li><strong>PointPillars</strong>: 3D object detection from LiDAR</li>
-                            <li><strong>Deep Q-Networks</strong>: Decision making in dynamic environments</li>
-                            <li><strong>Transformer models</strong>: Long-range trajectory prediction</li>
                         </ul>
                     </td>
                     <td>
@@ -330,13 +302,6 @@
                         </ul>
                     </td>
                     <td>
-                        <ul class="ai-model-list">
-                            <li><strong>Mask R-CNN</strong>: Pedestrian and obstacle segmentation</li>
-                            <li><strong>ORB-SLAM2</strong>: Simultaneous localization and mapping</li>
-                            <li><strong>Behavior Cloning</strong>: Learning from human demonstrations</li>
-                        </ul>
-                    </td>
-                    <td>
                         <ul class="advantages-list">
                             <li>Efficient last-mile delivery</li>
                             <li>Reduces traffic congestion</li>
@@ -359,13 +324,6 @@
                             <li><strong>3D LiDAR</strong>: Container positioning</li>
                             <strong>RTK GPS</strong>: Centimeter-level accuracy</li>
                             <li><strong>IMU</strong>: Stability control</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul class="ai-model-list">
-                            <li><strong>3D-CNN</strong>: Container recognition and positioning</li>
-                            <li><strong>Kalman Filters</strong>: Sensor fusion for precise localization</li>
-                            <li><strong>Multi-Agent RL</strong>: Coordination between multiple carriers</li>
                         </ul>
                     </td>
                     <td>
@@ -395,14 +353,13 @@
         <table>
             <thead>
                 <tr>
-                    <th style="width: 12%">Application</th>
-                    <th style="width: 12%">Description</th>
-                    <th style="width: 15%">Sensor Roles</th>
-                    <th style="width: 15%">AI Models/Architectures Used</th>
-                    <th style="width: 12%">Advantages</th>
-                    <th style="width: 12%">Challenges</th>
-                    <th style="width: 10%">Complexity</th>
-                    <th style="width: 12%">Status</th>
+                    <th>Application</th>
+                    <th>Description</th>
+                    <th>Sensor Roles</th>
+                    <th>Advantages</th>
+                    <th>Challenges</th>
+                    <th>Complexity</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -414,14 +371,6 @@
                             <li><strong>Thermal Cameras</strong>: Night vision</li>
                             <li><strong>LiDAR</strong>: Terrain mapping</li>
                             <li><strong>AI Cameras</strong>: Facial recognition</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul class="ai-model-list">
-                            <li><strong>YOLOv4-Tiny</strong>: Real-time object detection on edge devices</li>
-                            <li><strong>ArcFace</strong>: Facial recognition in challenging conditions</li>
-                            <li><strong>U-Net</strong>: Semantic segmentation of terrain</li>
-                            <li><strong>DeepSort</strong>: Object tracking across frames</li>
                         </ul>
                     </td>
                     <td>
@@ -449,13 +398,6 @@
                         </ul>
                     </td>
                     <td>
-                        <ul class="ai-model-list">
-                            <li><strong>ResNet-50</strong>: Pattern recognition in radar signatures</li>
-                            <li><strong>1D CNNs</strong>: Analyzing metal detector signals</li>
-                            <li><strong>Bayesian Networks</strong>: Probability estimation of mine locations</li>
-                        </ul>
-                    </td>
-                    <td>
                         <ul class="advantages-list">
                             <li>Saves soldier lives</li>
                             <li>Works in all weather</li>
@@ -477,13 +419,6 @@
                         <ul class="sensor-list">
                             <li><strong>360° LiDAR</strong>: Threat detection</li>
                             <li><strong>V2V</strong>: Convoy coordination</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul class="ai-model-list">
-                            <li><strong>CenterNet</strong>: 3D object detection for threat identification</li>
-                            <li><strong>Graph Neural Networks</strong>: Coordinating multiple vehicles</li>
-                            <li><strong>Deep Reinforcement Learning</strong>: Dynamic route planning under threat</li>
                         </ul>
                     </td>
                     <td>
@@ -511,14 +446,13 @@
         <table>
           <thead>
             <tr>
-              <th style="width: 12%">Application</th>
-              <th style="width: 12%">Description</th>
-              <th style="width: 15%">Sensor Roles</th>
-              <th style="width: 15%">AI Models/Architectures Used</th>
-              <th style="width: 12%">Advantages</th>
-              <th style="width: 12%">Challenges</th>
-              <th style="width: 10%">Complexity</th>
-              <th style="width: 12%">Status</th>
+              <th>Application</th>
+              <th>Description</th>
+              <th>Sensor Roles</th>
+              <th>Advantages</th>
+              <th>Challenges</th>
+              <th>Vehicle Complexity</th>
+              <th>Additional Remarks</th>
             </tr>
           </thead>
           <tbody>
@@ -535,13 +469,6 @@
                 </ul>
               </td>
               <td>
-                <ul class="ai-model-list">
-                  <li><strong>SegNet</strong>: Crop row detection and segmentation</li>
-                  <li><strong>LSTM Networks</strong>: Predictive maintenance of equipment</li>
-                  <li><strong>Behavior Cloning</strong>: Learning from expert operators</li>
-                </ul>
-              </td>
-              <td>
                 <ul class="advantages-list">
                   <li>Precision agriculture</li>
                   <li>Labor cost reduction</li>
@@ -553,7 +480,9 @@
                   <li>High initial investment</li>
                 </ul>
               </td>
-              <td class="complexity medium-complexity">Level 3-4</td>
+              <td class="complexity medium-complexity">
+                Medium (Level 3-4 autonomy)
+              </td>
               <td>Companies like John Deere and Monarch Tractor are pioneers.</td>
             </tr>
             <tr>
@@ -568,13 +497,6 @@
                 </ul>
               </td>
               <td>
-                <ul class="ai-model-list">
-                  <li><strong>U-Net</strong>: Crop health segmentation from multispectral images</li>
-                  <li><strong>YOLO-NAS</strong>: Pest detection in real-time</li>
-                  <li><strong>PPO Algorithm</strong>: Autonomous flight path optimization</li>
-                </ul>
-              </td>
-              <td>
                 <ul class="advantages-list">
                   <li>Efficient crop management</li>
                   <li>Data-driven insights</li>
@@ -586,7 +508,7 @@
                   <li>Limited flight time</li>
                 </ul>
               </td>
-              <td class="complexity low-complexity">Level 2</td>
+              <td class="complexity low-complexity">Low (Level 2 autonomy)</td>
               <td>Enhances precision farming techniques.</td>
             </tr>
           </tbody>
@@ -599,14 +521,13 @@
         <table>
           <thead>
             <tr>
-              <th style="width: 12%">Application</th>
-              <th style="width: 12%">Description</th>
-              <th style="width: 15%">Sensor Roles</th>
-              <th style="width: 15%">AI Models/Architectures Used</th>
-              <th style="width: 12%">Advantages</th>
-              <th style="width: 12%">Challenges</th>
-              <th style="width: 10%">Complexity</th>
-              <th style="width: 12%">Status</th>
+              <th>Application</th>
+              <th>Description</th>
+              <th>Sensor Roles</th>
+              <th>Advantages</th>
+              <th>Challenges</th>
+              <th>Vehicle Complexity</th>
+              <th>Additional Remarks</th>
             </tr>
           </thead>
           <tbody>
@@ -627,13 +548,6 @@
                 </ul>
               </td>
               <td>
-                <ul class="ai-model-list">
-                  <li><strong>3D PointNet++</strong>: Understanding construction site geometry</li>
-                  <li><strong>Deep Q-Learning</strong>: Autonomous digging strategies</li>
-                  <li><strong>Multi-Task Learning</strong>: Simultaneous object detection and terrain analysis</li>
-                </ul>
-              </td>
-              <td>
                 <ul class="advantages-list">
                   <li>Increased productivity</li>
                   <li>Reduced labor costs</li>
@@ -645,7 +559,7 @@
                   <li>Safety concerns</li>
                 </ul>
               </td>
-              <td class="complexity high-complexity">Level 4</td>
+              <td class="complexity high-complexity">High (Level 4 autonomy)</td>
               <td>Built Robotics is a key player in this domain.</td>
             </tr>
             <tr>
@@ -660,13 +574,6 @@
                 </ul>
               </td>
               <td>
-                <ul class="ai-model-list">
-                  <li><strong>Structure-from-Motion (SfM)</strong>: 3D reconstruction from images</li>
-                  <li><strong>Vision Transformers</strong>: Defect detection in structures</li>
-                  <li><strong>Kalman Filters</strong>: Sensor fusion for precise positioning</li>
-                </ul>
-              </td>
-              <td>
                 <ul class="advantages-list">
                   <li>Accurate data collection</li>
                   <li>Time-saving</li>
@@ -678,7 +585,7 @@
                   <li>Regulatory compliance</li>
                 </ul>
               </td>
-              <td class="complexity low-complexity">Level 2</td>
+              <td class="complexity low-complexity">Low (Level 2 autonomy)</td>
               <td>Enhances planning and monitoring efficiency.</td>
             </tr>
           </tbody>
@@ -693,14 +600,13 @@
         <table>
             <thead>
                 <tr>
-                    <th style="width: 12%">Application</th>
-                    <th style="width: 12%">Description</th>
-                    <th style="width: 15%">Sensor Roles</th>
-                    <th style="width: 15%">AI Models/Architectures Used</th>
-                    <th style="width: 12%">Advantages</th>
-                    <th style="width: 12%">Challenges</th>
-                    <th style="width: 10%">Complexity</th>
-                    <th style="width: 12%">Status</th>
+                    <th>Application</th>
+                    <th>Description</th>
+                    <th>Sensor Roles</th>
+                    <th>Advantages</th>
+                    <th>Challenges</th>
+                    <th>Complexity</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -711,13 +617,6 @@
                         <ul class="sensor-list">
                             <li><strong>Stereo Cameras</strong>: 360° vision</li>
                             <li><strong>V2X</strong>: Traffic signal communication</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul class="ai-model-list">
-                            <li><strong>YOLOX</strong>: Compact object detection for edge devices</li>
-                            <li><strong>DeepSet</strong>: Handling unordered point cloud data</li>
-                            <li><strong>Graph Attention Networks</strong>: Predicting pedestrian movements</li>
                         </ul>
                     </td>
                     <td>
@@ -745,13 +644,6 @@
                         </ul>
                     </td>
                     <td>
-                        <ul class="ai-model-list">
-                            <li><strong>MobileNetV3</strong>: Waste classification from images</li>
-                            <li><strong>Gaussian Processes</strong>: Predicting fill levels</li>
-                            <li><strong>Ant Colony Optimization</strong>: Efficient collection routes</li>
-                        </ul>
-                    </td>
-                    <td>
                         <ul class="advantages-list">
                             <li>Improves sanitation</li>
                             <li>Reduces manual labor</li>
@@ -773,13 +665,6 @@
                         <ul class="sensor-list">
                             <li><strong>LiDAR</strong>: Obstacle detection</li>
                             <li><strong>Dust Sensors</strong>: Air quality monitoring</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul class="ai-model-list">
-                            <li><strong>EfficientDet</strong>: Small obstacle detection</li>
-                            <li><strong>Deep Reinforcement Learning</strong>: Adaptive cleaning patterns</li>
-                            <li><strong>Time Series Forecasting</strong>: Predicting dirty areas</li>
                         </ul>
                     </td>
                     <td>
@@ -812,14 +697,13 @@
         <table>
             <thead>
                 <tr>
-                    <th style="width: 12%">Application</th>
-                    <th style="width: 12%">Description</th>
-                    <th style="width: 15%">Sensor Roles</th>
-                    <th style="width: 15%">AI Models/Architectures Used</th>
-                    <th style="width: 12%">Advantages</th>
-                    <th style="width: 12%">Challenges</th>
-                    <th style="width: 10%">Complexity</th>
-                    <th style="width: 12%">Status</th>
+                    <th>Application</th>
+                    <th>Description</th>
+                    <th>Sensor Roles</th>
+                    <th>Advantages</th>
+                    <th>Challenges</th>
+                    <th>Complexity</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -830,13 +714,6 @@
                         <ul class="sensor-list">
                             <li><strong>LiDAR</strong>: Rural road navigation</li>
                             <li><strong>Moisture Sensors</strong>: Produce monitoring</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul class="ai-model-list">
-                            <li><strong>YOLO-R</strong>: Robust object detection for rural roads</li>
-                            <li><strong>Meta-Learning</strong>: Adapting to diverse rural conditions</li>
-                            <li><strong>Federated Learning</strong>: Collaborative model improvement across farms</li>
                         </ul>
                     </td>
                     <td>
@@ -864,13 +741,6 @@
                         </ul>
                     </td>
                     <td>
-                        <ul class="ai-model-list">
-                            <li><strong>U-Net with Attention</strong>: Precise pothole segmentation</li>
-                            <li><strong>AutoML</strong>: Optimizing repair strategies</li>
-                            <li><strong>Edge AI</strong>: On-device processing for real-time response</li>
-                        </ul>
-                    </td>
-                    <td>
                         <ul class="advantages-list">
                             <li>Prevents accidents</li>
                             <li>Reduces maintenance costs</li>
@@ -892,13 +762,6 @@
                         <ul class="sensor-list">
                             <li><strong>Multispectral Cameras</strong>: Landing zones</li>
                             <li><strong>Collision Radar</strong>: Urban navigation</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul class="ai-model-list">
-                            <li><strong>Vision-Language Models</strong>: Understanding verbal emergency instructions</li>
-                            <li><strong>Hierarchical RL</strong>: Multi-level decision making</li>
-                            <li><strong>Swarm Intelligence</strong>: Coordinating multiple drones</li>
                         </ul>
                     </td>
                     <td>
@@ -930,7 +793,7 @@
                     <th>Application</th>
                     <th>Description</th>
                     <th>Key Players</th>
-                    <th>AI Models/Architectures</th>
+                    <th>Potential Impact</th>
                     <th>Development Stage</th>
                 </tr>
             </thead>
@@ -939,36 +802,21 @@
                     <td class="app-name">Autonomous Emergency Response</td>
                     <td>Integrated disaster response systems with drones and UGVs</td>
                     <td>DRDO, ISRO <span class="india-tag">India</span></td>
-                    <td>
-                        <ul class="ai-model-list">
-                            <li><strong>Multi-Modal Transformers</strong>: Fusing satellite, drone and ground data</li>
-                            <li><strong>Explainable AI</strong>: Decision transparency for emergency teams</li>
-                        </ul>
-                    </td>
+                    <td>Faster disaster assessment and response</td>
                     <td>Research phase</td>
                 </tr>
                 <tr>
                     <td class="app-name">AI-Powered Traffic Management</td>
                     <td>City-wide autonomous vehicle coordination systems</td>
                     <td>NVIDIA, Siemens</td>
-                    <td>
-                        <ul class="ai-model-list">
-                            <li><strong>Graph Neural Networks</strong>: Modeling city-scale traffic flows</li>
-                            <li><strong>MARL</strong>: Multi-agent reinforcement learning for coordination</li>
-                        </ul>
-                    </td>
+                    <td>30-40% traffic reduction in pilot cities</td>
                     <td>Early pilots</td>
                 </tr>
                 <tr>
                     <td class="app-name">Autonomous Construction</td>
                     <td>Self-building infrastructure with robotic crews</td>
                     <td>Built Robotics</td>
-                    <td>
-                        <ul class="ai-model-list">
-                            <li><strong>Diffusion Models</strong>: Generating optimal construction plans</li>
-                            <li><strong>Physics-Informed Neural Networks</strong>: Structural integrity prediction</li>
-                        </ul>
-                    </td>
+                    <td>24/7 construction with precision</td>
                     <td>Concept validation</td>
                 </tr>
             </tbody>
